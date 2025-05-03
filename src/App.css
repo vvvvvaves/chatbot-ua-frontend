@@ -1,0 +1,9 @@
+.app {
+  display: table-row;
+  margin-left: 0vw;
+  y: 0vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2270BA;
+  float: left;
+}

@@ -1,0 +1,24 @@
+.sidebar {
+    x: 0;
+    y: 0;
+    width: 6vw;
+    height: 100vh;
+    background-color: #06386F;
+    border-radius: 0px 4px 4px 0px;
+    border-right-width: 0px 0px 1px 0px;
+    border-right-style: solid;
+    border-right-color: black;
+    display: table-cell;
+  }
+
+.arrow-left-to-line-icon {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    color: aliceblue;
+}
+
+.chat-history {
+    width: 6vw;
+    height: 71vh;
+    /* background-color: red; */
+}
