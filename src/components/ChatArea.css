@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+.chat-area {
+  width: 100%;
+  min-width: 23rem;
+  height: 100vh;
+  /* background-color: green; */
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-h1 {
+  font-family: Prata;
+  font-size: 48px;
+  height: 64px;
+  color: aliceblue;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* background-color: red; */
+}
+
+.greeting-h2 {
+  font-family: Prata;
+  font-size: 16px;
+  height: 48px;
+  color: aliceblue;
+  text-align: center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* background-color: red; */
+}
+
+
+.chat-input {
+  width: 23rem;
+  min-width: 23rem;
+  height: 20vh;
+} 

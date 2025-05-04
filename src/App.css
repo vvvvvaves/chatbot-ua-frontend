@@ -1,9 +1,18 @@
 .app {
-  display: table-row;
-  margin-left: 0vw;
-  y: 0vh;
-  width: 100vw;
+  display: flex;
+  width: 100%;
   height: 100vh;
   background-color: #2270BA;
-  float: left;
+  overflow: hidden;
+}
+
+.chat-border-left,
+.chat-border-right {
+  width: 8rem;
+  min-width: 2rem;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  flex: 0 1 auto; /* Initial width auto, can shrink if needed */
+
 }
