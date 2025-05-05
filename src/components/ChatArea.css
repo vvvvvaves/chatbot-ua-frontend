@@ -27,8 +27,8 @@
 
 .greeting-h2 {
   font-family: Prata;
-  font-size: min(21px, 3.4vw);
-  width: 50%;
+  font-size: min(21px, max(18px, 3.4vw));
+  width: 120%;
   min-width: 23rem;
   color: aliceblue;
   text-align: center;
@@ -42,7 +42,7 @@
 
 h1, h2 {
   margin-top: 0;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
 
