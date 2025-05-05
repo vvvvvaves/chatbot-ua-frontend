@@ -14,30 +14,46 @@
 
 .greeting-h1 {
   font-family: Prata;
-  font-size: 48px;
-  height: 64px;
+  font-size: min(3rem, 6vw);
+  height: min(3rem, 6vw);
   color: aliceblue;
   backface-visibility: hidden;
   transform: translateZ(0);
   -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: normal;
+  /* text-shadow: 1px 1px black; */
   /* background-color: red; */
 }
 
 .greeting-h2 {
   font-family: Prata;
-  font-size: 16px;
-  height: 48px;
+  font-size: min(21px, 3.4vw);
+  width: 50%;
+  min-width: 23rem;
   color: aliceblue;
   text-align: center;
   backface-visibility: hidden;
   transform: translateZ(0);
   -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: normal;
+  /* text-shadow: 1px 0px black; */
   /* background-color: red; */
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
 }
 
 
 .chat-input {
-  width: 23rem;
+  width: 50%;
+  height: 19.11%;
   min-width: 23rem;
-  height: 20vh;
+  background-color: #D2C4BC;
+  border: 2px solid #825F40;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 2px #06396fb1;
+  /* box-shadow-spread: 4px; */
 } 
