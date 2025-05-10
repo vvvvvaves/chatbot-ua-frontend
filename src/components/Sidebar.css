@@ -2,26 +2,66 @@
     x: 0;
     y: 0;
     width: 3rem;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #06386F;
     border-radius: 0px 4px 4px 0px;
     border-right-width: 0px 0px 1px 0px;
     border-right-style: solid;
     border-right-color: black;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     float: left;
+    transition: 850ms;
+  }
+
+.sidebar.active {
+    width: 21rem;
+    transition: 350ms;
   }
 
 .chat-history {
     width: 3rem;
-    height: 68vh;
+    height: 65vh;
+    flex: 1 1 auto;
+    /* background-color: aquamarine; */
+    min-height: 0;
+}
+
+.sidebar-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vh;
+    /* align-self: center; */
+}
+
+.sidebar-list-item {
+    list-style: none;
+    font-family: Prata;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    /* background-color: green; */
+    margin-bottom: 2px;
+    margin-top: 1vh;
+}
+
+.sidebar-text {
+/* background-color: red; */
+    margin-top: 0.1rem;
+    margin-left: 0.25rem;
+    font-size: 20px;
 }
 
 .open-sidebar-icon, .dark-mode-icon, 
 .info-icon, .settings-icon, .donate-icon  {
-    margin-top: 1vh;
     margin-left: 0.5rem;
     color: aliceblue;
+    /* background-color: red; */
+}
+
+.open-sidebar-icon {
+    margin-top: 1vh;
 }
 
 .donate-icon {

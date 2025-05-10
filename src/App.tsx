@@ -1,7 +1,6 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import ChatArea from "./components/ChatArea";
-import ChatBorder from "./components/ChatBorder";
+import ChatPage from "./components/ChatPage";
 
 
 function App() {
@@ -9,9 +8,7 @@ function App() {
     <>
     <div className="app">
       <Sidebar />
-      <ChatBorder className="chat-border-left" content=""/>
-      <ChatArea></ChatArea>
-      <ChatBorder className="chat-border-right" content=""/>
+      <ChatPage />
     </div>
     
     </>

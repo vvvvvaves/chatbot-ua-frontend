@@ -1,29 +1,31 @@
-import { LuArrowLeftToLine, LuSettings, LuInfo } from "react-icons/lu";
-import { FaRegLightbulb } from "react-icons/fa";
-// import { FaRegHeart } from "react-icons/fa";
-import { GoHeartFill } from "react-icons/go";
+import { LuArrowLeftToLine } from "react-icons/lu";
+import { useState } from 'react';
+import SidebarData from './SidebarData'
+import { Link } from 'react-router-dom'
+
 
 import "./Sidebar.css";
 
 function Sidebar() {
+
+  const [sidebar, setSidebar] = useState(false)
+
+  const showSidebar = () => { setSidebar(sidebar => !sidebar) }
+
   return (
-    <div className="sidebar">
-      <div className="open-sidebar-icon">
+    <div className={sidebar ? "sidebar active" : "sidebar"}>
+      <div className="open-sidebar-icon" onClick={showSidebar}>
         <LuArrowLeftToLine size={"2rem"} />
       </div>
       <div className="chat-history"></div>
-      <div className="donate-icon">
-      <GoHeartFill size={"2rem"}/>
-      </div>
-      <div className="dark-mode-icon">
-        <FaRegLightbulb size={"2rem"}/>
-      </div>
-      <div className="info-icon">
-        <LuInfo size={"2rem"}/>
-      </div>
-      <div className="settings-icon">
-        <LuSettings size={"2rem"}></LuSettings>
-      </div>
+      <ul className="sidebar-list">
+      {SidebarData.map((item, index) => {
+        return (<li key={index} className={item.cName}>
+           {item.icon}
+           {sidebar && <span className="sidebar-text">{item.title}</span>}
+        </li>);
+      })}
+      </ul>
     </div>
   );
 }
