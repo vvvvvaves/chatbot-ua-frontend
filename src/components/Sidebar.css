@@ -6,13 +6,12 @@
     min-height: 100vh;
     background-color: #06386F;
     border-radius: 0px 4px 4px 0px;
-    border-right-width: 0px 0px 1px 0px;
     border-right-style: solid;
     border-right-color: black;
     display: flex;
     flex-direction: column;
     float: left;
-    transition: width 850ms ease;
+    transition: width 350ms ease;
     overflow: hidden;
 }
 
@@ -43,55 +42,75 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1vh;
-    /* align-self: center; */
     width: 100%;
+    align-items: start;
+    margin-left: 0.25rem;
 }
 
+
 .sidebar-list-item {
+    list-style-position:inside;
+    border: 1px solid #06386F;
     list-style: none;
     font-family: Prata;
     color: aliceblue;
     display: flex;
-    align-items: center;
     /* background-color: green; */
-    margin-bottom: 2px;
+    border-radius: 4px;
     margin-top: 1vh;
     cursor: pointer;
-    width: 100%;
-
+    transition: 350ms ease;
+    justify-content: start;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
 }
+
+.sidebar.active .sidebar-list-item {
+    width: 20.5rem;
+}
+
+.sidebar-list-item:hover {
+    background-color: #2270BA;
+    border: 1px solid black;
+}
+
 
 .sidebar-text {
-/* background-color: red; */
-    margin-top: 0.1rem;
-    margin-left: 0.25rem;
-    font-size: 20px;
+    margin-left: 0.4rem;
+    /* background-color: red; */
+    font-size: 19px;
     overflow: hidden;
     white-space: nowrap;
-    /* opacity: 0;
-    transition: opacity 850ms ease;
-    flex: 1; */
+    opacity: 0;
+    transition: opacity 350ms ease;
+    flex: 1;
 }
 
-/* .sidebar.active .sidebar-text {
+.sidebar.active .sidebar-text {
     opacity: 1;
     transition: opacity 350ms ease;
-} */
+}
 
 
 .open-sidebar-icon, .dark-mode-icon, 
 .info-icon, .settings-icon, .donate-icon  {
     min-width: 2rem;
     max-width: 2rem;
-    max-height: 2rem;
-    margin-left: 0.5rem;
+    height: 2rem;
     color: aliceblue;
-    /* background-color: red; */
+    margin-left: 0.25rem;
+    /* background-color: green; */
 }
 
 .open-sidebar-icon {
     margin-top: 1vh;
     cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.open-sidebar-icon:hover {
+    /* background-color: #2270BA; */
 }
 
 .donate-icon {
@@ -102,3 +121,8 @@
     stroke: aliceblue;
     stroke-width: 2px;
 }
+
+ .dark-mode-icon path {
+    stroke: aliceblue;
+    stroke-width: 1px;
+ }
