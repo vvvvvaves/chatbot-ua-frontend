@@ -1,6 +1,7 @@
 .sidebar {
     x: 0;
     y: 0;
+    min-width: 3rem;
     width: 3rem;
     min-height: 100vh;
     background-color: #06386F;
