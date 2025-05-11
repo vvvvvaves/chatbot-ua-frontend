@@ -5,3 +5,43 @@
   background-color: #2270BA;
   overflow: hidden;
 }
+
+.content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: Prata;
+  font-size: min(3rem, 6vw);
+  height: min(3rem, 6vw);
+  color: aliceblue;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: normal;
+  /* text-shadow: 1px 1px black; */
+  /* background-color: red; */
+}
+
+h2 {
+  font-family: Prata;
+  font-size: min(21px, max(18px, 3.4vw));
+  width: 120%;
+  min-width: 23rem;
+  color: aliceblue;
+  text-align: center;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: normal;
+  /* text-shadow: 1px 0px black; */
+  /* background-color: red; */
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}

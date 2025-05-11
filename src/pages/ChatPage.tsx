@@ -1,6 +1,6 @@
-import ChatArea from "./ChatArea";
-import ChatBorder from "./ChatBorder";
-import './ChatPage.css'
+import ChatArea from "../components/ChatArea";
+import ChatBorder from "../components/ChatBorder";
+import "./ChatPage.css";
 
 function ChatPage() {
   return (
@@ -12,4 +12,4 @@ function ChatPage() {
   );
 }
 
-export default ChatPage
+export default ChatPage;

@@ -3,8 +3,6 @@ import { FaRegLightbulb } from "react-icons/fa";
 import { GoHeartFill } from "react-icons/go";
 
 const SidebarData = [
-
-
   {
     title: "Donate",
     icon: <GoHeartFill className="donate-icon" size={"2rem"} />,
