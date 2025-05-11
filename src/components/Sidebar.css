@@ -25,7 +25,8 @@
 }
 
 .sidebar.active {
-    width: 21rem;
+    width: 18rem;
+    flex-shrink: 0;
     transition: width 350ms ease;
 }
 
@@ -67,7 +68,7 @@
 }
 
 .sidebar.active .sidebar-list-item {
-    width: 20.5rem;
+    width: 17.5rem;
 }
 
 .sidebar-list-item:hover {
