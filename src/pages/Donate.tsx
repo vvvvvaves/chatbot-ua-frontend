@@ -1,3 +1,4 @@
+import './Donate.css'
 function Donate() {
   return (
     <div className="donate">

@@ -67,6 +67,10 @@
     width: 2.5rem;
 }
 
+a:has(> .sidebar-list-item) {
+    text-decoration: none;
+}
+
 .sidebar.active .sidebar-list-item {
     width: 17.5rem;
 }

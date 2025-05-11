@@ -6,7 +6,7 @@ const SidebarData = [
   {
     title: "Donate",
     icon: <GoHeartFill className="donate-icon" size={"2rem"} />,
-    path: "/settings",
+    path: "/donate",
     cName: "sidebar-list-item",
   },
   {

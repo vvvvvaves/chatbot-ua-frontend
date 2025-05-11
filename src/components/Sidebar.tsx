@@ -1,7 +1,7 @@
 import { LuArrowLeftToLine } from "react-icons/lu";
 import { useState } from "react";
 import SidebarData from "./SidebarData";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./Sidebar.css";
 
@@ -21,10 +21,12 @@ function Sidebar() {
       <ul className="sidebar-list">
         {SidebarData.map((item, index) => {
           return (
+            <NavLink to={item.path} end>
             <li key={index} className={item.cName}>
               {item.icon}
               <span className="sidebar-text">{item.title}</span>
             </li>
+            </NavLink>
           );
         })}
       </ul>
