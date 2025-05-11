@@ -11,13 +11,23 @@
     display: flex;
     flex-direction: column;
     float: left;
-    transition: 850ms;
-  }
+    transition: width 850ms ease;
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+    }
+}
 
 .sidebar.active {
     width: 21rem;
-    transition: 350ms;
-  }
+    transition: width 350ms ease;
+}
 
 .chat-history {
     width: 3rem;
@@ -33,6 +43,7 @@
     flex-direction: column;
     margin-bottom: 1vh;
     /* align-self: center; */
+    width: 100%;
 }
 
 .sidebar-list-item {
@@ -44,6 +55,9 @@
     /* background-color: green; */
     margin-bottom: 2px;
     margin-top: 1vh;
+    cursor: pointer;
+    width: 100%;
+
 }
 
 .sidebar-text {
@@ -51,10 +65,24 @@
     margin-top: 0.1rem;
     margin-left: 0.25rem;
     font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* opacity: 0;
+    transition: opacity 850ms ease;
+    flex: 1; */
 }
+
+/* .sidebar.active .sidebar-text {
+    opacity: 1;
+    transition: opacity 350ms ease;
+} */
+
 
 .open-sidebar-icon, .dark-mode-icon, 
 .info-icon, .settings-icon, .donate-icon  {
+    min-width: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
     margin-left: 0.5rem;
     color: aliceblue;
     /* background-color: red; */
@@ -62,6 +90,7 @@
 
 .open-sidebar-icon {
     margin-top: 1vh;
+    cursor: pointer;
 }
 
 .donate-icon {

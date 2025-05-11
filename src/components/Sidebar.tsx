@@ -22,7 +22,7 @@ function Sidebar() {
       {SidebarData.map((item, index) => {
         return (<li key={index} className={item.cName}>
            {item.icon}
-           {sidebar && <span className="sidebar-text">{item.title}</span>}
+           {sidebar && <span className= "sidebar-text">{item.title}</span>}
         </li>);
       })}
       </ul>

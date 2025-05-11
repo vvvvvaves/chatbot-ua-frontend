@@ -7,3 +7,9 @@
   display: flex;
   flex: 0 1 auto; /* Initial width auto, can shrink if needed */
 }
+
+@media (max-width: 800px) {
+    .chat-border-left {
+        margin-left: 3rem;
+    }
+}
