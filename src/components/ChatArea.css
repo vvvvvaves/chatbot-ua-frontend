@@ -25,6 +25,20 @@
   padding-left: 15px;
   padding-bottom: 15px;
   padding-right: 5px;
+  resize: none;
+  overflow-y: auto;
+  scrollbar-color: #8b8b8b transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.text-area {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
   font-family: Prata;
   font-weight: normal;
   backface-visibility: hidden;
@@ -37,7 +51,29 @@
   scrollbar-color: #8b8b8b transparent;
 }
 
+.text-area:focus, .text-area:hover {
+  outline: none;
+}
+
 .chat-input:focus, .chat-input:hover {
   outline: none;
   border-color: #613F22;
+}
+
+.send-button {
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.send-icon {
+  color: white;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.stop-icon {
+  color: white;
+  background-color: red;
+  width: 65%;
+  height: 65%;
 }
