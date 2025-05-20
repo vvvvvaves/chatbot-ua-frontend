@@ -5,7 +5,22 @@
   /* background-color: green; */
   flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+
+.chat-border-left,
+.chat-border-right {
+  width: 8rem;
+  min-width: 2rem;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  flex: 0 1 auto; /* Initial width auto, can shrink if needed */
+}
+
+@media (max-width: 800px) {
+    .chat-border-left {
+        margin-left: 3rem;
+    }
 }

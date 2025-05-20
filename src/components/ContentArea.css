@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+.content-area {
+  width: 100%;
+  min-width: 23rem;
+  height: 74.76vh;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 12.62vh;
+  bottom: 12.62vh;
+  /* background-color: green; */
+}
+
+.body {
+  /* background-color: black; */
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.wrapper-description, .wrapper-foundations {
+  /* background-color: yellowgreen; */
+  width: 39.879%;
+  min-height: 74.819%;
+  max-height: 74.819%;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 5%;
+  float: left;
+}
+
+.description, .foundations {
+  /* background-color: red; */
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.vl {
+  min-height: 74.819%;
+  max-height: 74.819%;
+  width: 1px;
+  background-color: aliceblue;
+  float: left;
+  margin-left: 5%;
+  /* margin-bottom: 3.4025%; */
+}

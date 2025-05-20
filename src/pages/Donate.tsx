@@ -1,8 +1,12 @@
-import './Donate.css'
+import ChatBorder from "../components/ChatBorder";
+import ContentArea from "../components/ContentArea";
+import "./Donate.css";
 function Donate() {
   return (
     <div className="donate">
-      <h1>Задонатьте!</h1>
+      <ChatBorder className="chat-border-left" content="" />
+      <ContentArea />
+      <ChatBorder className="chat-border-right" content="" />
     </div>
   );
 }
