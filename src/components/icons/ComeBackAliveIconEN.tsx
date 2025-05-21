@@ -18,7 +18,6 @@ function ComeBackAliveIconEN(props : Props) {
   let width = props.width || "292.709";
   let height = props.height || "146.355";
   return (
-    <div>
           <svg 
       xmlns="http://www.w3.org/2000/svg" 
       xmlSpace="preserve" 
@@ -50,7 +49,6 @@ function ComeBackAliveIconEN(props : Props) {
         </g>
       </g>
     </svg>
-    </div>
   )
 }
 

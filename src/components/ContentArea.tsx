@@ -1,8 +1,10 @@
 import "./ContentArea.css";
 import RusorizIcon from "./icons/RusorizIcon";
 import ComeBackAliveIconUA from "./icons/ComeBackAliveIconUA";
-import ComeBackAliveIconEN from "./icons/ComeBackAliveIconEn";
+import ComeBackAliveIconEN from "./icons/ComeBackAliveIconEN";
 import PrytulaIcon from "./icons/PrytulaIcon";
+import FoundationsData from "./FoundationsData";
+
 function ContentArea() {
   return (
     <div className="content-area">
@@ -30,10 +32,17 @@ function ContentArea() {
         <div className="vl" />
         <div className="wrapper-foundations">
           <div className="foundations">
-            <RusorizIcon />
-            <ComeBackAliveIconEN />
-            {/* <ComeBackAliveIconUA /> */}
-            {/* <PrytulaIcon /> */}
+            <ul className="foundations-list">
+              {FoundationsData.EN.map((item, index) => {
+                return <li className="foundations-item">
+                  {item.icon}
+                </li>
+              })}
+            </ul>
+            {/* <RusorizIcon className="rusoriz-icon" width={"150px"} height={"150px"} /> */}
+            {/* <ComeBackAliveIconEN className="come-back-alive-icon-en" width={"150px"} height={"150px"} /> */}
+            {/* <ComeBackAliveIconUA width={"150px"} height={"150px"} /> */}
+            {/* <PrytulaIcon className="prytula-icon" width={"150px"} height={"150px"} /> */}
           </div>
         </div>
       </div>

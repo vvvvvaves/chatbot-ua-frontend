@@ -52,3 +52,31 @@
   margin-left: 5%;
   /* margin-bottom: 3.4025%; */
 }
+
+.foundations-list {
+  /* background-color: aqua; */
+  padding: 0;
+}
+
+.foundations-item {
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 5%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.comeback-icon {
+  width: auto;
+  height: 65px;
+  /* background-color: red; */
+}
+
+.prytula-icon, .rusoriz-icon {
+  width: 75px;
+  height: auto;
+  margin-left: calc(((62.0356/31.2679)*60px - 75px) / 2);
+  /* background-color: red; */
+}
