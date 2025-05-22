@@ -56,6 +56,11 @@
 .foundations-list {
   /* background-color: aqua; */
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .foundations-item {
@@ -74,9 +79,13 @@
   /* background-color: red; */
 }
 
-.prytula-icon, .rusoriz-icon {
+.prytula-icon, .rusoriz-icon, .hospitallers-icon, .dobrobat-icon, .insight-icon, .starenki-icon, .donor-ua-icon, .ua-animals-icon {
   width: 75px;
   height: auto;
   margin-left: calc(((62.0356/31.2679)*60px - 75px) / 2);
   /* background-color: red; */
+}
+.ua-animals-icon, .prytula-icon, .rusoriz-icon, .hospitallers-icon, .dobrobat-icon, .insight-icon, .starenki-icon, .donor-ua-icon, .comeback-icon 
+  {
+/* background-color: red; */
 }
