@@ -27,12 +27,11 @@ function ContentArea() {
         <div className="vl" />
         <div className="wrapper-foundations">
           <div className="foundations">
-            <ul className="foundations-list">
+            <div className="foundations-grid">
               {FoundationsData.EN.map((item, index) => {
-                return <li className="foundations-item">{item.icon}</li>;
+                return <div className="foundations-item">{item.icon}</div>;
               })}
-            </ul>
-            
+            </div>
           </div>
         </div>
       </div>

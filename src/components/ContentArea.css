@@ -4,7 +4,7 @@
   width: 100%;
   min-width: 23rem;
   height: 74.76vh;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -41,6 +41,7 @@
   text-align: center;
   flex-direction: column;
   align-content: center;
+  /* background-color: blue; */
 }
 
 .vl {
@@ -53,23 +54,21 @@
   /* margin-bottom: 3.4025%; */
 }
 
-.foundations-list {
+.foundations-grid {
   /* background-color: aqua; */
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px 15px;
+  justify-content: start;
   align-items: center;
 }
 
 .foundations-item {
-  text-decoration: none;
-  list-style: none;
-  margin-bottom: 5%;
   /* background-color: green; */
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -79,10 +78,13 @@
   /* background-color: red; */
 }
 
-.prytula-icon, .rusoriz-icon, .hospitallers-icon, .dobrobat-icon, .insight-icon, .starenki-icon, .donor-ua-icon, .ua-animals-icon {
+.dobrobat-icon, .insight-icon {
+  width: 150px;
+}
+
+.prytula-icon, .rusoriz-icon, .hospitallers-icon, .starenki-icon, .donor-ua-icon, .ua-animals-icon {
   width: 75px;
   height: auto;
-  margin-left: calc(((62.0356/31.2679)*60px - 75px) / 2);
   /* background-color: red; */
 }
 .ua-animals-icon, .prytula-icon, .rusoriz-icon, .hospitallers-icon, .dobrobat-icon, .insight-icon, .starenki-icon, .donor-ua-icon, .comeback-icon 

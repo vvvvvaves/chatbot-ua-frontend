@@ -8,7 +8,7 @@ import DobrobatEN from "./icons/foundations/dobrobat/DobrobatEN";
 import UAnimals from "./icons/foundations/ua_animals/UAnimals";
 import InsightEN from "./icons/foundations/insight/InsightEN";
 import InsightUA from "./icons/foundations/insight/InsightUA";
-import Starenki from "./icons/foundations/starenki/starenki";
+import Starenki from "./icons/foundations/starenki/Starenki";
 import DonorUA from "./icons/foundations/donor_ua/DonorUA";
 import KoloIcon from "./icons/foundations/kolo/KoloIcon";
 const FoundationsData = {
@@ -87,13 +87,8 @@ const FoundationsData = {
       link: "",
     },
     {
-      icon: <UAnimals className="ua-animals-icon" fill10="green" fill11="blue" fill12="yellow" />,
+      icon: <UAnimals className="ua-animals-icon"/>,
       title: "UAnimals",
-      link: "",
-    },
-    {
-      icon: <InsightEN className="insight-icon" fill0="green" fill1="green" fill2="green" fill3="green" fill4="green" fill5="green" fill6="green" />,
-      title: "InsightEN",
       link: "",
     },
     {
@@ -104,6 +99,11 @@ const FoundationsData = {
     {
       icon: <DonorUA className="donor-ua-icon" />,
       title: "DonorUA",
+      link: "",
+    },
+    {
+      icon: <InsightEN className="insight-icon"/>,
+      title: "InsightEN",
       link: "",
     },
   ],
