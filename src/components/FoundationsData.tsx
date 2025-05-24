@@ -10,101 +10,100 @@ import InsightEN from "./icons/foundations/insight/Insight";
 import InsightUA from "./icons/foundations/insight/InsightUA";
 import Starenki from "./icons/foundations/starenki/Starenki";
 import DonorUA from "./icons/foundations/donor_ua/DonorUA";
-import KoloIcon from "./icons/foundations/kolo/KoloIcon";
 const FoundationsData = {
   UA: [
     {
       icon: <ComeBackAliveIconUA className="comeback-icon" />,
       title: "Повернись Живим",
-      link: "",
+      link: "https://savelife.in.ua/",
     },
     {
       icon: <RusorizIcon className="rusoriz-icon" />,
       title: "Русоріз",
-      link: "",
+      link: "https://www.sternenkofund.org/fundraisings/rusoriz",
     },
     {
       icon: <PrytulaIcon className="prytula-icon" />,
       title: "Благодійний фонд Сергія Притули",
-      link: "",
+      link: "https://prytulafoundation.org/",
     },
     {
       icon: <HospitallersIcon className="hospitallers-icon" />,
       title: "Госпітальєри",
-      link: "",
+      link: "https://www.hospitallers.life/",
     },
     {
       icon: <DobrobatUA className="dobrobat-icon" />,
-      title: "Dobrobat",
-      link: "",
+      title: "Добробат",
+      link: "https://www.dobrobat.in.ua/",
     },
     {
       icon: <UAnimals className="ua-animals-icon" fill10="green" fill11="blue" fill12="yellow"/>,
       title: "UAnimals",
-      link: "",
+      link: "https://uanimals.org/",
     },
     {
       icon: <InsightUA className="insight-icon" />,
-      title: "InsightUA",
-      link: "",
+      title: "Інсайт",
+      link: "https://www.insight-ukraine.org/uk/",
     },
     {
       icon: <Starenki className="starenki-icon" />,
-      title: "Starenki",
-      link: "",
+      title: "Старенькі",
+      link: "https://starenki.com.ua/",
     },
     {
       icon: <DonorUA className="donor-ua-icon" />,
       title: "DonorUA",
-      link: "",
+      link: "https://www.donor.ua/",
     },
   ],
   EN: [
     {
       icon: <ComeBackAliveIconEN className="comeback-icon" />,
       title: "Come Back Alive",
-      link: "",
+      link: "https://savelife.in.ua/en/",
     },
     {
       icon: <RusorizIcon className="rusoriz-icon" />,
       title: "Rusoriz",
-      link: "",
+      link: "https://www.sternenkofund.org/en/fundraisings/rusoriz",
     },
     {
       icon: <PrytulaIcon className="prytula-icon" />,
       title: "Serhiy Prytula Charity Foundation",
-      link: "",
+      link: "https://prytulafoundation.org/en/",
     },
     {
       icon: <HospitallersIcon className="hospitallers-icon" />,
       title: "Hospitallers",
-      link: "",
+      link: "https://www.hospitallers.life/",
     },
 
     {
       icon: <DobrobatEN className="dobrobat-icon" fill0="aliceblue" />,
       title: "Dobrobat",
-      link: "",
+      link: "https://www.dobrobat.in.ua/en/",
     },
     {
       icon: <UAnimals className="ua-animals-icon" fill10="aliceblue" fill11="transparent" fill12="aliceblue"/>,
       title: "UAnimals",
-      link: "",
+      link: "https://uanimals.org/en/",
     },
     {
       icon: <Starenki className="starenki-icon" fill="aliceblue" />,
       title: "Starenki",
-      link: "",
+      link: "https://starenki.com.ua/en/",
     },
     {
       icon: <DonorUA className="donor-ua-icon" />,
       title: "DonorUA",
-      link: "",
+      link: "https://www.donor.ua/en",
     },
     {
       icon: <InsightEN className="insight-icon"/>,
       title: "InsightEN",
-      link: "",
+      link: "https://www.insight-ukraine.org/en/",
     },
   ],
 };

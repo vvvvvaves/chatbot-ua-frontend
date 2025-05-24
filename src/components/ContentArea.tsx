@@ -3,7 +3,7 @@ import FoundationsData from "./FoundationsData";
 function ContentArea() {
   return (
     <div className="content-area">
-      <h1>Допоможіть українській армії!</h1>
+      <h1>Help Ukraine!</h1>
       <div className="body">
         <div className="wrapper-description">
           <div className="description">
@@ -29,7 +29,7 @@ function ContentArea() {
           <div className="foundations">
             <div className="foundations-grid">
               {FoundationsData.EN.map((item, index) => {
-                return <div className="foundations-item">{item.icon}</div>;
+                return <div className="foundations-item"><a href={item.link}>{item.icon}</a></div>;
               })}
             </div>
           </div>
