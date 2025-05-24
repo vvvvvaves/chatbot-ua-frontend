@@ -4,9 +4,9 @@ import ComeBackAliveIconEN from "./icons/foundations/come_back_alive/ComeBackAli
 import PrytulaIcon from "./icons/foundations/prytula/PrytulaIcon";
 import HospitallersIcon from "./icons/foundations/hospitallers/HospitallersIcon";
 import DobrobatUA from "./icons/foundations/dobrobat/DobrobatUA";
-import DobrobatEN from "./icons/foundations/dobrobat/DobrobatEN";
+import DobrobatEN from "./icons/foundations/dobrobat/Dobrobat";
 import UAnimals from "./icons/foundations/ua_animals/UAnimals";
-import InsightEN from "./icons/foundations/insight/InsightEN";
+import InsightEN from "./icons/foundations/insight/Insight";
 import InsightUA from "./icons/foundations/insight/InsightUA";
 import Starenki from "./icons/foundations/starenki/Starenki";
 import DonorUA from "./icons/foundations/donor_ua/DonorUA";
@@ -82,17 +82,17 @@ const FoundationsData = {
     },
 
     {
-      icon: <DobrobatEN className="dobrobat-icon" />,
+      icon: <DobrobatEN className="dobrobat-icon" fill0="aliceblue" />,
       title: "Dobrobat",
       link: "",
     },
     {
-      icon: <UAnimals className="ua-animals-icon"/>,
+      icon: <UAnimals className="ua-animals-icon" fill10="aliceblue" fill11="transparent" fill12="aliceblue"/>,
       title: "UAnimals",
       link: "",
     },
     {
-      icon: <Starenki className="starenki-icon" />,
+      icon: <Starenki className="starenki-icon" fill="aliceblue" />,
       title: "Starenki",
       link: "",
     },
