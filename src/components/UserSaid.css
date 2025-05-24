@@ -1,0 +1,23 @@
+.user-said {
+    margin: 0.5rem;
+    margin-left: 10px;
+    width: 100%;
+    height: min-content;
+    /* background-color: red; */
+}
+
+.user-said p {
+    padding: 0.7rem;
+    padding-right: 2rem;
+    color: aliceblue;
+    width: fit-content;
+    max-width: 100%;
+    background-color: #084382;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: min-content;
+}
+
+
+
+

@@ -4,11 +4,11 @@ import "./ChatPage.css";
 
 function ChatPage() {
   return (
-    <>
+    <div className="chat-page">
       <ChatBorder className="chat-border-left" content="" />
       <ChatArea></ChatArea>
       <ChatBorder className="chat-border-right" content="" />
-    </>
+    </div>
   );
 }
 

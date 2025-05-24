@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
+:root {
+  --scroll-offset: 157;
+}
+
 .chat-area {
   width: 100%;
   min-width: 23rem;
@@ -10,11 +14,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .chat-area-conversing {
   justify-content: flex-end;
+}
+
+.chat-area-dialogue {
+  --scroll-offset: 157;
+  width: 50%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: rgb(177, 177, 177) transparent;
+  scrollbar-width: thin;
+  padding-right: calc(var(--scroll-offset) * 1vw - var(--scroll-offset) * 1%);
+  margin-right: calc(-1 * var(--scroll-offset) * 1vw + var(--scroll-offset) * 1%);
+  /* background-color: red; */
 }
 
 .chat-input {
@@ -50,7 +69,6 @@
   align-items: center;
   justify-content: flex-end;
 }
-
 
 .text-area {
   width: 100%;
