@@ -10,6 +10,7 @@ import InsightEN from "./icons/foundations/insight/Insight";
 import InsightUA from "./icons/foundations/insight/InsightUA";
 import Starenki from "./icons/foundations/starenki/Starenki";
 import DonorUA from "./icons/foundations/donor_ua/DonorUA";
+import "./FoundationsData.css";
 const FoundationsData = {
   UA: [
     {

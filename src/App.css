@@ -55,4 +55,7 @@ p {
   transform: translateZ(0);
   -webkit-font-smoothing: subpixel-antialiased;
   margin: 0;
+  text-align:justify;
+  white-space: pre-line;
+  text-align-last: left;
 }

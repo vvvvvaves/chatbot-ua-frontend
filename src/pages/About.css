@@ -5,7 +5,37 @@
   /* background-color: green; */
   flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+  /* overflow: scroll; */
+}
+
+.about .data-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+    /* background-color: red; */
+  }
+
+.about .data-item {
+  /* background-color: blue; */
+  justify-content: start;
+  align-items: center;
+}
+
+.chat-border-left,
+.chat-border-right {
+  width: 8rem;
+  min-width: 2rem;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  flex: 0 1 auto; /* Initial width auto, can shrink if needed */
+}
+
+@media (max-width: 800px) {
+    .chat-border-left {
+        margin-left: 3rem;
+    }
 }

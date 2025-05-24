@@ -1,35 +1,31 @@
 import "./ContentArea.css";
-import FoundationsData from "./FoundationsData";
-function ContentArea() {
+
+interface Props {
+  header: string;
+  description: React.ReactNode;
+  data: {
+    title: string;
+    link: string;
+    icon: React.ReactNode;
+  }[];
+}
+
+function ContentArea({ header, description, data }: Props) {
   return (
     <div className="content-area">
-      <h1>Help Ukraine!</h1>
+      <h1>{header}</h1>
       <div className="body">
         <div className="wrapper-description">
           <div className="description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien
-              vitae pellentesque sem placerat in id. Pretium tellus duis
-              convallis tempus leo eu aenean. Urna tempor pulvinar vivamus
-              fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia
-              integer nunc posuere. Lorem ipsum dolor sit amet consectetur
-              adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing
-              elit. Ex sapien vitae pellentesque sem placerat in id. Pretium
-              tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar
-              vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada
-              lacinia integer nunc posuere. Lorem ipsum dolor sit amet
-              consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur
-              adipiscing elit. Ex sapien vitae pellentesque sem placerat in id.
-              Pretium tellus duis convallis
-            </p>
+            {description}
           </div>
         </div>
         <div className="vl" />
-        <div className="wrapper-foundations">
-          <div className="foundations">
-            <div className="foundations-grid">
-              {FoundationsData.EN.map((item, index) => {
-                return <div className="foundations-item"><a href={item.link}>{item.icon}</a></div>;
+        <div className="wrapper-data">
+          <div className="data">
+            <div className="data-grid">
+              {data.map((item, index) => {
+                return <div className="data-item"><a href={item.link}>{item.icon}</a></div>;
               })}
             </div>
           </div>

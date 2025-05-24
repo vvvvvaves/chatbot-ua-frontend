@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.wrapper-description, .wrapper-foundations {
+.wrapper-description, .wrapper-data {
   /* background-color: yellowgreen; */
   width: 39.879%;
   min-height: 74.819%;
@@ -35,7 +35,7 @@
   float: left;
 }
 
-.description, .foundations {
+.description, .data {
   /* background-color: red; */
   width: 100%;
   text-align: center;
@@ -54,7 +54,7 @@
   
 }
 
-.foundations-grid {
+.data-grid {
   /* background-color: aqua; */
   padding: 0;
   display: grid;
@@ -65,27 +65,10 @@
   align-items: center;
 }
 
-.foundations-item {
+.data-item {
   /* background-color: green; */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.comeback-icon {
-  width: auto;
-  height: 65px;
-  /* background-color: red; */
-}
-
-
-.prytula-icon, .rusoriz-icon, .hospitallers-icon, .starenki-icon, .donor-ua-icon, .ua-animals-icon, .dobrobat-icon, .insight-icon {
-  width: 75px;
-  height: auto;
-  /* background-color: red; */
-}
-.ua-animals-icon, .prytula-icon, .rusoriz-icon, .hospitallers-icon, .dobrobat-icon, .insight-icon, .starenki-icon, .donor-ua-icon, .comeback-icon 
-  {
-/* background-color: red; */
 }

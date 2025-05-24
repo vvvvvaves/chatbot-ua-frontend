@@ -1,0 +1,17 @@
+.genius-icon, .github-icon, .linkedin-icon {
+    width: 75px;
+    height: auto;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.linkedin-icon {
+    fill: aliceblue;
+}
+
+.genius-icon
+{
+    background-color: #ffff64;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,16 @@
+.comeback-icon {
+    width: auto;
+    height: 65px;
+    /* background-color: red; */
+  }
+  
+  
+  .prytula-icon, .rusoriz-icon, .hospitallers-icon, .starenki-icon, .donor-ua-icon, .ua-animals-icon, .dobrobat-icon, .insight-icon {
+    width: 75px;
+    height: auto;
+    /* background-color: red; */
+  }
+  .ua-animals-icon, .prytula-icon, .rusoriz-icon, .hospitallers-icon, .dobrobat-icon, .insight-icon, .starenki-icon, .donor-ua-icon, .comeback-icon 
+    {
+  /* background-color: red; */
+  }
