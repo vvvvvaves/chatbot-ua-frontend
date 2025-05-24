@@ -4,7 +4,7 @@
   width: 100%;
   min-width: 23rem;
   height: 74.76vh;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -41,7 +41,6 @@
   text-align: center;
   flex-direction: column;
   align-content: center;
-  /* background-color: blue; */
 }
 
 .vl {
