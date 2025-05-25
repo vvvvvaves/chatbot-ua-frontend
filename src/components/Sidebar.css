@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 800px) {
-    .sidebar {
+    .sidebar .chat-page {
         position: absolute;
         z-index: 2;
         top: 0;

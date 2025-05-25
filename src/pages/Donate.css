@@ -1,27 +1,34 @@
 .donate {
   width: 100%;
-  min-width: 23rem;
+  /* min-width: 23rem; */
   height: 100vh;
   /* background-color: green; */
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
-  align-items: start;
-  /* overflow: scroll; */
+  align-items: center;
+  overflow: auto;
 }
 
-.chat-border-left,
-.chat-border-right {
-  width: 8rem;
-  min-width: 2rem;
+.grid-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  overflow: auto;
+}
+
+
+.donate .chat-border-left,
+.donate .chat-border-right {
+  /* background-color: green; */
+  width: 100%;
   height: 100vh;
   /* background-color: red; */
   display: flex;
   flex: 0 1 auto; /* Initial width auto, can shrink if needed */
-}
-
-@media (max-width: 800px) {
-    .chat-border-left {
-        margin-left: 3rem;
-    }
 }

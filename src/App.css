@@ -6,6 +6,14 @@
   overflow: hidden;
 }
 
+.app .donate {
+  overflow: auto;
+}
+
+.app .about {
+  overflow: auto;
+}
+
 .content {
   display: flex;
   flex: 1;

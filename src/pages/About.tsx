@@ -7,6 +7,7 @@ import MyData from "../components/MyData";
 function About() {
   return (
     <div className="about">
+      <div className="grid-layout">
       <ChatBorder className="chat-border-left" content="" />
       <ContentArea
         header="About"
@@ -30,6 +31,7 @@ function About() {
         data={MyData}
       />
       <ChatBorder className="chat-border-right" content="" />
+      </div>
     </div>
   );
 }

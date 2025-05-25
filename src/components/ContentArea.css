@@ -2,25 +2,25 @@
 
 .content-area {
   width: 100%;
-  min-width: 23rem;
-  height: 74.76vh;
-  flex: 0 1 auto;
+  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  margin-top: 12.62vh;
-  bottom: 12.62vh;
-  /* background-color: green; */
 }
 
+
 .body {
-  /* background-color: black; */
-  width: 100%;
-  height: 100%;
+  /* background-color: blue; */
+  width: 1200px;
+  height: 74.76%;
+  display: flex;
   flex-direction: row;
-  align-content: center;
   align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  /* background-color: red; */
 }
 
 .wrapper-description, .wrapper-data {
@@ -31,6 +31,9 @@
   text-align: center;
   flex-direction: column;
   align-content: center;
+}
+
+.wrapper-data {
   margin-left: 5%;
   float: left;
 }
@@ -40,8 +43,9 @@
   width: 100%;
   text-align: center;
   flex-direction: column;
-  align-content: center;
+  align-content: start;
 }
+
 
 .vl {
   min-height: 74.819%;

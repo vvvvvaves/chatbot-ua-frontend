@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 800px) {
-    .chat-border-left {
+  .chat-page .chat-border-left {
         margin-left: 3rem;
     }
 }
