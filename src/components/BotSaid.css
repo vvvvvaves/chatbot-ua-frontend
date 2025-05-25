@@ -1,0 +1,20 @@
+.bot-said {
+    margin: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: min-content;
+    /* background-color: red; */
+}
+
+.bot-said p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* padding-right: 2rem; */
+    color: aliceblue;
+    width: fit-content;
+    /* background-color: #084382; */
+    max-width: 100%;
+    margin-right: 10px;
+    height: min-content;
+}

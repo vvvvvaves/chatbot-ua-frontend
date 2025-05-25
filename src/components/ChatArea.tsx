@@ -3,8 +3,18 @@ import Button from "./Button";
 import { FaRegPaperPlane, FaStop } from "react-icons/fa";
 import { useState } from "react";
 import UserSaid from "./UserSaid";
+import BotSaid from "./BotSaid";
+
+const defaultResponse = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos." +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.\n" +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.\n" +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.\n" +
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.\n";
 function ChatArea() {
-  const [dialogue, setDialogue] = useState<string[]>([]);
+  const [dialogue, setDialogue] = useState<{role: string, message: string}[]>([]);
   
   const [isConversing, setIsConversing] = useState(false);
   const handleKeyDown = (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -15,15 +25,16 @@ function ChatArea() {
       textArea.value = "";
       if (/\S/.test(userInput)) {
         setIsConversing(true);
-        setDialogue([...dialogue, userInput]);
+        // default response
+        setDialogue([...dialogue, {role: "user", message: userInput}, {role: "assistant", message: defaultResponse}]);
         console.log(dialogue);
       }
     }
   };
   return <div className={isConversing ? "chat-area-conversing" : "chat-area"}>
     {isConversing && <div className="chat-area-dialogue">
-      {dialogue.map((text, index) => (
-        <UserSaid text={text} />
+      {dialogue.map((message, index) => (
+        message.role === "user" ? <UserSaid message={message.message} /> : <BotSaid message={message.message} />
       ))}
     </div>}
     {!isConversing && <h1>Вітаємо!</h1>}

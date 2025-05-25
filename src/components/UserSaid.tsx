@@ -1,11 +1,11 @@
 import "./UserSaid.css";
 interface Props {
-  text: string;
+  message: string;
 }
-function UserSaid({ text }: Props) {
+function UserSaid({ message }: Props) {
   return (
     <div className="user-said">
-      <p>{text}</p>
+      <p>{message}</p>
     </div>
   )
 }
